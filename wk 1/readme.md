@@ -53,3 +53,10 @@ stored in the student registration database.
 - Student username
 - Student password
 - "Forgot password" option
+
+
+2. XYZ community would like to create a library management system. The objective is for the database to handle all transactions for
+the library. The database needs to store all the data that is relevant to managing the books, managing customers, and the day-to-
+day activities of the library. Create a list of important data that would need to be captured and stored in the library management
+database.
+
