@@ -60,3 +60,53 @@ the library. The database needs to store all the data that is relevant to managi
 day activities of the library. Create a list of important data that would need to be captured and stored in the library management
 database.
 
+*Book information*
+- Title
+- Author
+- ISBN number
+- Genre
+- Language
+- Year of publication
+- Location of publication
+- Series number
+- Edition number
+- Quantity of availablity
+- Location in library
+- Status of book (checked out or available)
+- Condition of book (fair, good, new)
+- Type of book (e-book, paperback, audiobook)
+
+*Customer information*
+- Name of customer
+- Date of birth
+- Phone number
+- Home address
+- E-mail address
+- Library card number
+- First date of membership
+- Membership expiration date
+- Current books on hold
+- Current books checked out
+- Current books reserved
+
+*Library computer system*
+- Book title
+- Customer name 
+- Customer library card number
+- Date of checkout
+- Date of needed return
+- Extensions for return
+- Fees accumulated
+
+*Library statistics*
+- Total inventory
+- Quantity of books checked out
+- Quantity of books reserved
+- Quantity of books returned on time
+- Quantity of books returned late
+- Quantity of books never returned
+- Number of duplicate copies of books
+- Quantity of books in fair condition 
+- Quantity of books in good condition 
+- Quantity of books in new condition 
+- Specific genre quantity
