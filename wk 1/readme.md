@@ -118,3 +118,4 @@ database.
 - a. Hierarchial database model 
     - This is a tree like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
 
+- b. 
