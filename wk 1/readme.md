@@ -110,3 +110,11 @@ database.
 - Quantity of books in new condition 
 - Specific genre quantity
 - Popularity ratio
+
+## DFo_1_3_Practice
+
+1. Identify the type of database model that has been represented in the given model snapshots:
+a. Hierarchial database model 
+    - This is a tree like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
+
+b. 
