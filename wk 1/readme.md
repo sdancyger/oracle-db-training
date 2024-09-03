@@ -117,6 +117,17 @@ database.
 
 - a. Hierarchial database model 
     - This is a tree-like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
+<html>
+    <head>
+    <title>Picture A</title>
+    </head>
+
+    <body>
+        <img src="downloads/PictureA.png">
+    </body>
+</html>
+
+
 
 - b.  Hierarchial database model 
     - This is a tree-like model where each node (customer ID/customer name) braches to other nodes (bank acct 1 and bank acct 2).
