@@ -115,7 +115,6 @@ database.
 
 1. Identify the type of database model that has been represented in the given model snapshots:
 
-- Hierarchial database model 
+- a. Hierarchial database model 
     - This is a tree like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
 
-b. 
