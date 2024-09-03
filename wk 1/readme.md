@@ -116,22 +116,17 @@ database.
 1. Identify the type of database model that has been represented in the given model snapshots:
 
 - a. Hierarchial database model 
-    - This is a tree-like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
-<html>
-    <head>
-    <title>Picture A</title>
-    </head>
+    - This is a tree-like model where each node (employee, part-time, full-time, etc.), are connected by links/branches.
 
-    <body>
-        <img src="downloads/PictureA.png">
-    </body>
-</html>
+- b.  Network database model 
+    - Flexible way to represent objects and their relationships, with the records connecting to each other through links. Each record also contains only one value, and each link will connect two records. 
 
+- c. Object-oriented database model
+    - Each object has a value set for the object's attributes, as well as the methods that operate on the object's state. 
 
+- d. Flat file database model
+    -  Designed around one table, where plain-text is used, and each line has only one record.
 
-- b.  Hierarchial database model 
-    - This is a tree-like model where each node (customer ID/customer name) braches to other nodes (bank acct 1 and bank acct 2).
-
-- c. Relational data
-    - ldm, logical data model
-    - entity relationship model (erm)
+- e. Relational database model
+    - Organization of data in tables (rows and columns), with each field only being able to contain one value. 
+    
