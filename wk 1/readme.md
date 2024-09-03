@@ -116,6 +116,11 @@ database.
 1. Identify the type of database model that has been represented in the given model snapshots:
 
 - a. Hierarchial database model 
-    - This is a tree like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
+    - This is a tree-like model where each node (employee, part-time, full-time, etc.), are connected by branches. 
 
-- b. 
+- b.  Hierarchial database model 
+    - This is a tree-like model where each node (customer ID/customer name) braches to other nodes (bank acct 1 and bank acct 2).
+
+- c. Relational data
+    - ldm, logical data model
+    - entity relationship model (erm)
