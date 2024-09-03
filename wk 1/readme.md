@@ -129,4 +129,3 @@ database.
 
 - e. Relational database model
     - Organization of data in tables (rows and columns), with each field only being able to contain one value. 
-    
