@@ -274,24 +274,19 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
     a. Customers send in orders for goods. Each order may contain requests for variable quantities of one or more products from ABC's range. ABC keeps a stock file showing for each product the product details and the preferred supplier, the quantity in stock, the reorder level and other details.
 
-        a. fsdf
+        a. good line
 
 
 
     b. ABC delivers those products that it has in stock in response to the customer order and an invoice is produced for the dispatched items. Any items that were not in stock are placed on a back order list and these items are usually re-ordered from the preferred supplier. Occasionally items are ordered from alternative sources.
 
-    - b. ddsfsd
+        b. ddsfsd
 
     c. In response to the invoices that are sent out to ABC's customers, the customers send in payments. Sometimes a payment will be for one invoice, sometimes for part of an invoice and sometimes for several invoices and part-invoices.
 
-    - c. sdfs
+        c. sdfs
 
 
     d. Identify the tables and associated fields from the above scenario.
 
-        a. 
-
-        b.
-
-        - c.
-        d. 
+        d. okok
