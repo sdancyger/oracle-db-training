@@ -175,9 +175,6 @@ Tasks
 1. Identify the possible tables and associated fields from the given scenario:
 Book.com is an online virtual store on the Internet where customers can browse the catalog and select products of interest.
     a. Every book has a title, ISBN, year and price. The store also keeps the author and publisher for any book.
-        Table = Book
-                Fields = title, ISBN, year, price
-                Primary key = book_ID
     b. For authors, the database keeps the name, address and the URL of their homepage.
     c. For publishers, the database keeps the name, address, phone number and the URL of their website.
     d. The store has several warehouses, each of which has a code, address and phone number.
@@ -188,24 +185,43 @@ Book.com is an online virtual store on the Internet where customers can browse t
     i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
     j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
         - Possible tables and associated fields include: 
-        
+
             a.  Table = Book
                 Fields = title, ISBN, year, price
                 Primary key = book_ID
 
-            2.  Table = Authors
-                Fields = name, address, URL of homepage.
+            b.  Table = Authors
+                Fields = name, address, homepage_URL
                 Primary key = author_ID
 
-            3.  Table = 
-                Fields = 
+            c.  Table = Publishers
+                Fields = name, address, phone_number, website_URL
+                Primary key = publisher_ID
 
-            4.  Table = 
-                Fields =
+            d.  Table = Warehouse_store
+                Fields = code, address, phone_number
+                Primary key = warehouse_store_ID
 
-            5.  Table = 
-                Fields = 
+            e.  Table = Warehouse_stocks
+                Fields = stock_quantity
+                
 
+            f.  Table = Database_stocks
+                Fields = stock_quantity
+
+            g.  Table = Customers
+                Fields = name, address, email_ID, phone_number
+                Primary key = Customer_ID
+            
+            h.  Table = Shopping_carts
+                Fields = cart_quantity
+                Primary key = Shopping_cart_ID
+                
+            i.  Table = Shopping_carts_content
+                Fields = stock_quantity
+            
+            j.  Table = Transaction_stage
+                Fields = billing_address, shipping_address, shipping_option, payment_type, e-mail_update
 
 2. ABC Ltd plans to computerize its sales ordering and stock control system. A feasibility study has strongly suggested that a relational database system be installed. The details of ABC's sales and stock control are as follows:
     a. Customers send in orders for goods. Each order may contain requests for variable quantities of one or more products from ABC's range. ABC keeps a stock file showing for each product the product details and the preferred supplier, the quantity in stock, the reorder level and other details.
