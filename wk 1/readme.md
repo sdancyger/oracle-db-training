@@ -171,7 +171,8 @@ database.
 
 ## DFo_2_1_Practice
 
-Tasks
+In this practice you analyze the features of multiple table databases from a set of examples.
+
 1. Identify the possible tables and associated fields from the given scenario:
 
 Book.com is an online virtual store on the Internet where customers can browse the catalog and select products of interest.
@@ -252,7 +253,6 @@ Book.com is an online virtual store on the Internet where customers can browse t
             e.  Table = Warehouse_stocks
                 Fields = stock_quantity
                 
-
             f.  Table = Database_stocks
                 Fields = stock_quantity
 
