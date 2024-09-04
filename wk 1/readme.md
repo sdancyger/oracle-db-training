@@ -184,21 +184,52 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
     b. For authors, the database keeps the name, address and the URL of their homepage.
 
+        b.  Table = Authors
+            Fields = name, address, homepage_URL
+            Primary key = author_ID
+
+
     c. For publishers, the database keeps the name, address, phone number and the URL of their website.
+
+        c.  Table = Publishers
+            Fields = name, address, phone_number, website_URL
+            Primary key = publisher_ID
 
     d. The store has several warehouses, each of which has a code, address and phone number.
 
+       d.   Table = Warehouse_store
+            Fields = code, address, phone_number
+            Primary key = warehouse_store_ID
+
     e. The warehouse stocks several books. A book may be stocked at multiple warehouses.
+
+        e.  Table = Warehouse_stocks
+            Fields = stock_quantity
 
     f. The database records the number of copies of a book stocked at various warehouses.
 
+        f.  Table = Database_stocks
+            Fields = stock_quantity
+
     g. The bookstore keeps the name, address, email-id, and phone number of its customers.
+        g.  Table = Customers
+            Fields = name, address, email_ID, phone_number
+            Primary key = Customer_ID
 
     h. A customer owns several shopping carts. A shopping cart is identified by a Shopping_Cart_ID and contains several books.
 
+        h.  Table = Shopping_carts
+            Fields = cart_quantity
+            Primary key = Shopping_cart_ID
+
     i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
+        i.  Table = Shopping_carts_content
+            Fields = stock_quantity
 
     j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
+
+        j.  Table = Transaction_stage
+            Fields = billing_address, shipping_address, shipping_option, payment_type, e-mail_update
 
         - Possible tables and associated fields include: 
 
