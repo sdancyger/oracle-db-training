@@ -188,12 +188,15 @@ Book.com is an online virtual store on the Internet where customers can browse t
     i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
     j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
         - Possible tables and associated fields include: 
+        
             a.  Table = Book
                 Fields = title, ISBN, year, price
                 Primary key = book_ID
+
             2.  Table = Authors
                 Fields = name, address, URL of homepage.
                 Primary key = author_ID
+
             3.  Table = 
                 Fields = 
 
