@@ -168,3 +168,46 @@ database.
             - Doctors that do not have seven years experience cannot be affliated with the hospital.
             - The current system needs to track all the registered doctors to ensure criteria of seven years experience is met.
             - The current system needs to track all the patients (outpatient, emergency room, admissions).
+
+## DFo_2_1_Practice
+
+Tasks
+1. Identify the possible tables and associated fields from the given scenario:
+Book.com is an online virtual store on the Internet where customers can browse the catalog and select products of interest.
+    a. Every book has a title, ISBN, year and price. The store also keeps the author and publisher for any book.
+        Table = Book
+        Fields = title, ISBN, year, price
+        Primary key = book_ID
+    
+    b. For authors, the database keeps the name, address and the URL of their homepage.
+    c. For publishers, the database keeps the name, address, phone number and the URL of their website.
+    d. The store has several warehouses, each of which has a code, address and phone number.
+    e. The warehouse stocks several books. A book may be stocked at multiple warehouses.
+    f. The database records the number of copies of a book stocked at various warehouses.
+    g. The bookstore keeps the name, address, email-id, and phone number of its customers.
+    h. A customer owns several shopping carts. A shopping cart is identified by a Shopping_Cart_ID and contains several books.
+    i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
+    j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
+        - Possible tables and associated fields include: 
+            a.  Table = Book
+                Fields = title, ISBN, year, price
+                Primary key = book_ID
+            2.  Table = Authors
+                Fields = name, address, URL of homepage.
+                Primary key = author_ID
+            3.  Table = 
+                Fields = 
+
+            4.  Table = 
+                Fields =
+
+            5.  Table = 
+                Fields = 
+
+
+2. ABC Ltd plans to computerize its sales ordering and stock control system. A feasibility study has strongly suggested that a relational database system be installed. The details of ABC's sales and stock control are as follows:
+    a. Customers send in orders for goods. Each order may contain requests for variable quantities of one or more products from ABC's range. ABC keeps a stock file showing for each product the product details and the preferred supplier, the quantity in stock, the reorder level and other details.
+    b. ABC delivers those products that it has in stock in response to the customer order and an invoice is produced for the dispatched items. Any items that were not in stock are placed on a back order list and these items are usually re-ordered from the preferred supplier. Occasionally items are ordered from alternative sources.
+    c. In response to the invoices that are sent out to ABC's customers, the customers send in payments. Sometimes a payment will be for one invoice, sometimes for part of an invoice and sometimes for several invoices and part-invoices.
+    d. Identify the tables and associated fields from the above scenario.
+
