@@ -232,45 +232,9 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
         j.  Table = Transaction_stage
             Fields = billing_address, shipping_address, shipping_option, payment_type, e-mail_update
-
-        - Possible tables and associated fields include: 
-
-            a.  Table = Book
-                Fields = title, ISBN, year, price
-                Primary key = book_ID
-
-            b.  Table = Authors
-                Fields = name, address, homepage_URL
-                Primary key = author_ID
-
-            c.  Table = Publishers
-                Fields = name, address, phone_number, website_URL
-                Primary key = publisher_ID
-
-            d.  Table = Warehouse_store
-                Fields = code, address, phone_number
-                Primary key = warehouse_store_ID
-
-            e.  Table = Warehouse_stocks
-                Fields = stock_quantity
-                
-            f.  Table = Database_stocks
-                Fields = stock_quantity
-
-            g.  Table = Customers
-                Fields = name, address, email_ID, phone_number
-                Primary key = Customer_ID
-            
-            h.  Table = Shopping_carts
-                Fields = cart_quantity
-                Primary key = Shopping_cart_ID
-                
-            i.  Table = Shopping_carts_content
-                Fields = stock_quantity
-            
-            j.  Table = Transaction_stage
-                Fields = billing_address, shipping_address, shipping_option, payment_type, e-mail_update
-
+ 
+ 
+ 
 2. ABC Ltd plans to computerize its sales ordering and stock control system. A feasibility study has strongly suggested that a relational database system be installed. The details of ABC's sales and stock control are as follows:
 
     a. Customers send in orders for goods. Each order may contain requests for variable quantities of one or more products from ABC's range. ABC keeps a stock file showing for each product the product details and the preferred supplier, the quantity in stock, the reorder level and other details.
