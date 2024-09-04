@@ -178,6 +178,10 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
     a. Every book has a title, ISBN, year and price. The store also keeps the author and publisher for any book.
 
+        a.  Table = Book
+            Fields = title, ISBN, year, price
+            Primary key = book_ID
+
     b. For authors, the database keeps the name, address and the URL of their homepage.
 
     c. For publishers, the database keeps the name, address, phone number and the URL of their website.
