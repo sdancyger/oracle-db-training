@@ -142,7 +142,7 @@ database.
             - Student membership is free.
             - Corporate and faculty memberships provide additional privileges to the customer. 
             - Membership type can only be changed if sufficient justification is provided.
-            - 
+            
         - Associated Constraints: 
             - Customers can only belong to one membership type (corporate, student, or individual).
             - Memberships cannot be changed.
@@ -154,4 +154,17 @@ database.
 
 2. Star Care hospital is a multi-specialty hospital that caters to needs of different patients. Every doctor registered with this hospital is assigned a unique ID that starts with the letter "DC". The hospital ensures that the doctors associated with them have a minimum of seven years of working experience. Every patient is required to register with the hospital on their first visit. When a patient arrives, a unique patient number starting with the letters "PT" is assigned to him/her. 
     - Your task is to identify the business rules and the associated constraints from the case scenario described.
-        - 
+        - Business Rules: 
+            - Every registered doctor has a unique ID.
+            - Each uniquie ID begins with "DC."
+            - Doctors must have a minimum of seven years working experience.
+            - Every patient needs to register with the hospital during the initial visit. 
+            - When a patient arrives, patients receive a unique patient number.
+            - When a patient arrives, a unique patient number is provided and begins with "PT."
+
+        - Associated Constraints: 
+            - Every registered doctor must have the unique ID that begins with "DC."
+            - Every patient must have the unique patient number that begins with "PT."
+            - Doctors that do not have seven years experience cannot be affliated with the hospital.
+            - The current system needs to track all the registered doctors to ensure criteria of seven years experience is met.
+            - The current system needs to track all the patients (outpatient, emergency room, admissions).
