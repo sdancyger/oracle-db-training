@@ -173,6 +173,7 @@ database.
 
 In this practice you analyze the features of multiple table databases from a set of examples.
 
+
 1. Identify the possible tables and associated fields from the given scenario:
 
 Book.com is an online virtual store on the Internet where customers can browse the catalog and select products of interest.
@@ -274,19 +275,26 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
     a. Customers send in orders for goods. Each order may contain requests for variable quantities of one or more products from ABC's range. ABC keeps a stock file showing for each product the product details and the preferred supplier, the quantity in stock, the reorder level and other details.
 
-        a. good line
+        a.  Table = Customers
+            Fields = cart_quantity
+            Primary key = Customer_ID
 
+        a.  Table = Products
+            Fields = product_name, preferred_supplier, product_stock, product_reorder_level, other_details
+            Primary key = Product_ID
 
 
     b. ABC delivers those products that it has in stock in response to the customer order and an invoice is produced for the dispatched items. Any items that were not in stock are placed on a back order list and these items are usually re-ordered from the preferred supplier. Occasionally items are ordered from alternative sources.
 
-        b. ddsfsd
+        b.  Table = Invoice
+            Fields = invoice_number, invoice_date, invoice_availablity
+            Primary key = Invoice_ID
 
     c. In response to the invoices that are sent out to ABC's customers, the customers send in payments. Sometimes a payment will be for one invoice, sometimes for part of an invoice and sometimes for several invoices and part-invoices.
 
-        c. sdfs
+        c.  Table = Payments
+            Fields = payment_amount, payment_type, payment_date
+            Primary key = Payment_ID
 
 
     d. Identify the tables and associated fields from the above scenario.
-
-        d. okok
