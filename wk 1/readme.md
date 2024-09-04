@@ -179,15 +179,15 @@ Book.com is an online virtual store on the Internet where customers can browse t
         Fields = title, ISBN, year, price
         Primary key = book_ID
     
-    b. For authors, the database keeps the name, address and the URL of their homepage.
-    c. For publishers, the database keeps the name, address, phone number and the URL of their website.
-    d. The store has several warehouses, each of which has a code, address and phone number.
-    e. The warehouse stocks several books. A book may be stocked at multiple warehouses.
-    f. The database records the number of copies of a book stocked at various warehouses.
-    g. The bookstore keeps the name, address, email-id, and phone number of its customers.
-    h. A customer owns several shopping carts. A shopping cart is identified by a Shopping_Cart_ID and contains several books.
-    i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
-    j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
+    - b. For authors, the database keeps the name, address and the URL of their homepage.
+    - c. For publishers, the database keeps the name, address, phone number and the URL of their website.
+    - d. The store has several warehouses, each of which has a code, address and phone number.
+    - e. The warehouse stocks several books. A book may be stocked at multiple warehouses.
+   - f. The database records the number of copies of a book stocked at various warehouses.
+    - g. The bookstore keeps the name, address, email-id, and phone number of its customers.
+    - h. A customer owns several shopping carts. A shopping cart is identified by a Shopping_Cart_ID and contains several books.
+    - i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
+    - j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
         - Possible tables and associated fields include: 
             a.  Table = Book
                 Fields = title, ISBN, year, price
