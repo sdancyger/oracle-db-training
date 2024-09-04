@@ -1,5 +1,5 @@
 # oracle-db-training
 ### good afternoon
-###### within this repository are multiple weekly folders that will contain the Oracle assignments
+###### Within this repository are multiple folders that will contain the weekly Oracle assignments.
 
 
