@@ -262,3 +262,61 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
 
     d. Identify the tables and associated fields from the above scenario.
+
+
+
+    ## DFo_2_2_Practice
+
+In this practice, you will illustrate the difference between an idea and a physical result.
+
+
+1. Provide five reasons for creating a conceptual data model.
+
+    - Allows for the identification of relationships among entities.
+    - Can capture the functional and informational needs of a business.
+    - Can assist with reflecting future needs of a business. 
+    - Can assist with addressing what is conceptually ideal for a business without addressing what is possible physically. 
+    - Helps document important entities and their relationships. 
+
+2. List two examples of conceptual models and physical models.
+
+    - Conceptual models:
+        - Entity-relationship diagram
+        - Online shopping application
+        - Flow chart
+
+    - Physical models:
+        - Hierarchical database model
+        - Design for a house
+
+
+     ## DFo_2_3_Practice
+
+     Exercise 1: Identify and draw entities as a beginning of an ERD
+
+        In this practice, you identify and add the entities for an Academic Database, or in other words a School Management System. For your convenience, here is a summary of how the Academic Database (School Management System) works:
+
+        a. A School/University has many Departments which offer courses to students in a given academic session.
+
+        b. Each of these courses is taught by a faculty.
+
+        c. Students enroll for different courses in an academic session.
+        
+        d. Besides the registration details, the parent information of the student also needs to be maintained by the University/School.
+
+        e. The Department maintains the student’s attendance details which would decide the eligibility of the student to take up the exams for that academic session.
+
+        f. For each academic session, exams are conducted and the results are shared with the student within a stipulated period of time.
+
+        g. The Department also maintains a log of the Faculty login and logout time for their reporting needs.
+        Tasks
+        
+            1. With the information provided above, identify and create the entities for the School Management System.
+
+    
+    Exercise 2: Identify and add Attributes and corresponding Mandatory and Optional notation to ERD
+
+        
+    In this practice, you identify the attributes and their associated optionality notation in the entities which you have created in Exercise 1.
+    
+            1. Add the appropriate attributes as well as the optionality (*, °) to all the entities of the Academic Database.
