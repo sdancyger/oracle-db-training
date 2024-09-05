@@ -408,16 +408,16 @@ Book.com is an online virtual store on the Internet where customers can browse t
                 - faculty login time
                     - factulty_ID           * Required
                     - login_time            * Required
-                    - department            ° Optional
+                    - department_name           ° Optional
                 - faculty logout time
                     - faculty_ID            * Required
                     - logout_time           * Required
-                    - department            ° Optional
+                    - department_name            ° Optional
 
 
     ## DFo_2_4_Practice
 
-    Exercise 1: Identify the Unique Identifier and corresponding Primary keys
+Exercise 1: Identify the Unique Identifier and corresponding Primary keys
 
 
 *In this practice you identify the unique identifiers and the corresponding primary keys from the given scenarios.*
@@ -441,19 +441,183 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
         - Entity: MOVIE
         - Attributes: title, date released, producer, director
+                --> title
 
         - Entity: LOCKER
         - Attributes: size, location, number
+                --> number
 
 
-    Exercise 2: Identify the Unique Identifiers and add to the ERD
+
+
+Exercise 2: Identify the Unique Identifiers and add to the ERD
 
 *In this practice, you will identify unique identifiers and add to an ERD.*
 
 1. Use the Academic Database ERD from the previous exercises to identify the following:
 
     a. Unique Identifiers
-        - 
+        - school_ID
+        - department_ID
+        - enrollment_ID
+        - faculty_ID
+        - course_ID
+        - attendance_ID
+        - semester_ID
 
     b. Candidate Unique Identifiers
-        - 
+        - student_email
+        - faculty_email
+        - student_phone_number
+        - faculty_phone_number
+        - department_name
+        - course_name
+        - name
+        - month
+        - year
+        - exam_score
+        - exam_class
+        - department_name
+        - login_time
+        - logout_time
+
+
+    ## DFo_2_5_Practice
+
+
+Exercise 1: Identify relationships from the ERD
+
+*In this practice, you identify the relationships from the ERD diagrams and write the ERDish sentences.*
+
+
+1. Read the relationship. Which text corresponds to the diagram?
+
+a. 
+
+    - Each EMPLOYEE may be assigned to one or more DEPARTMENTs.
+    - Each DEPARTMENT must be responsible for one or more EMPLOYEEs.
+
+b. 
+
+    - Each EMPLOYEE must be assigned to one and only one DEPARTMENT.
+    - Each DEPARTMENT must be responsible for one or more EMPLOYEEs.
+
+c. 
+
+    - Each EMPLOYEE must be assigned to exactly one DEPARTMENT.
+    - Each DEPARTMENT may be responsible for exactly one EMPLOYEE
+
+
+The answer is "b" because the diagram displays that multiple employees can be assignmeed to one department / one department is responsible for multiple employees.
+
+
+2. Read each relationship in the model below. For each relationship, write the ERD statement and your comments. Use your
+knowledge of normal people and towns in your comments.
+
+- A person is born in a town.
+- A town can be the birthplace of a person.
+- A person can live in a town.
+- A town can be the hometown to multiple people.
+- A person can visit a town. 
+- Towns can be visited by people. 
+- One person is the mayor of a town. 
+- A town can be governed by one person. 
+
+
+Exercise 2: Analyze and Model Relationships
+
+
+*In this practice, you analyze and model the relationships for the following entities, which you created in the Academic Database previously.*
+
+
+    1. Write the ERDish for each of the relationships in the Academic Database including relationship names, optionality and cardinality.
+    
+    Draw the ERD including the relationships
+
+- Each course has one department.
+    - cardinality- one and only one. 
+    - optionality - mandatory
+- Each course has an academic session.
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each course has students 
+    - cardinality- one or more
+    - optionality - mandatory
+- Each course has exams.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each faculty has one academic session.
+    - cardinality - one and only one. 
+    - optionality - mandatory
+- Each faculty has one or more courses. 
+    - cardinality- one or more. 
+    - optionality - mandatory
+- Each faculty has a department.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each faculty has students.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each faculty creates exams.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each department has an academic session.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each department has faculty
+    - cardinality- one or more
+    - optionality - mandatory
+- Each department has courses
+    - cardinality- one or more
+    - optionality - mandatory
+- Each department has parent information.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each academic session has faculty
+    - cardinality- one or more
+    - optionality - mandatory
+- Each academic session has faculty
+    - cardinality- one or more
+    - optionality - mandatory
+- Each academic session has courses
+    - cardinality- one or more
+    - optionality - mandatory
+- Each parent information has a student
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each parent information is stored within the department.
+    - cardinality- one and only one.
+    - optionality - mandatory
+- Each student has courses.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each student has exams.
+    - cardinality- one or more
+    - optionality - mandatory
+- Each student has classes within different departments
+    - cardinality- one or more
+    - optionality - mandatory
+- Each student has an academic session
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each student has parent information
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each student is taught by faculty
+    - cardinality- one or more
+    - optionality - mandatory
+- Each exam is taken by students
+    - cardinality- one or more
+    - optionality - mandatory
+- Each exam is provided within different courses
+    - cardinality- one or more
+    - optionality - mandatory
+- Each exam is within an academic session
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each exam is provided under a department
+    - cardinality- one and only one
+    - optionality - mandatory
+- Each exam is administered by faculty
+    - cardinality- one or more
+    - optionality - mandatory
