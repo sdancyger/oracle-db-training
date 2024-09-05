@@ -627,7 +627,7 @@ Exercise 2: Analyze and Model Relationships
 
 Exercise 1: Identify the components in the ERD
 
-In this practice you will identify the components in a given simple ERD.
+*In this practice you will identify the components in a given simple ERD.*
 
 1. Identify the possible Entities and Attributes from the given scenario.
 
@@ -723,3 +723,116 @@ classroom.”
     - cardinality = one and only one 
 - One course can be taught in several classes
     - cardinality = one to many
+
+
+## DFo_3_1_Practice
+
+Exercise 1: Resolve M:M Relationships
+
+*In this practice, you will resolve the following M: M relationships within the Academic database. Add additional attributes in the
+intersection entities where needed.*
+
+1. Resolve M: M relationships between STUDENT and the COURSE using a barred relationship
+- Entities: 
+    - Student
+    - Course
+
+- Attributes: 
+    - first_name
+    - last_name
+    - student_ID_number
+    - ID_name
+    - registration_year
+    - email
+    - number_of_working_days
+    - number_of_days_off
+    - exam_eligibility
+    - course_ID
+    - course_name
+    
+
+-Students enroll in courses.
+
+
+2. Resolve M: M relationships between FACULTY and the COURSE.
+- Entities: 
+    - Faculty
+    - Course
+- Attributes: 
+    - first_name
+    - last_name
+    - email
+    - login_date
+    - login_time
+    - details
+    - faculty_ID_number
+    - course_ID
+    - course_name
+
+
+-Faculty teach courses.
+
+-Courses are taught by multiple faculty.
+
+
+3. Resolve M: M relationships between STUDENT,COURSE and EXAM
+- Entities:
+    - Course
+    - Student
+    - Exam
+
+- Attributes:
+    - exam_ID
+    - exam_name
+    - exam_type
+    - exam_start_date
+    - exam_description
+    - first_name
+    - last_name
+    - email
+    - login_date
+    - login_time
+    - details
+    - faculty_ID_number
+    - course_ID
+    - course_name
+    - student_ID_number
+    - ID_name
+    - registration_year
+    - number_of_working_days
+    - number_of_days_off
+    - exam_eligibility
+
+-Students take exams in courses
+
+-Exams are provided to students during courses
+
+-Exams are taken by students who are enrolled in courses
+
+-Students enroll in courses to take exams
+
+-Courses have students that take exams
+
+
+Exercise 2: Adding nontransferability option to an ERD
+
+
+*In this practice, you create the ERD from the given scenario and add nontransferability option to it.*
+
+
+1. A STUDENT will be assigned an EXAM RESULT after taking an exam. Once an EXAM RESULT has been issued, it cannot be transferred to another STUDENT.
+
+- Entities:
+    - Student
+    - Exam
+- Attributes:
+    - first_name
+    - last_name
+    - student_ID
+    - exam_eligibility
+    - exam_type
+    - exam_result
+
+-One student can receive only one exam result. 
+
+-One exam result can be provided to only one student, and cannot be transferred to another student.
