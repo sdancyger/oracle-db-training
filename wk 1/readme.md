@@ -364,3 +364,50 @@ In this practice, you will illustrate the difference between an idea and a physi
     In this practice, you identify the attributes and their associated optionality notation in the entities which you have created in Exercise 1.
     
             1. Add the appropriate attributes as well as the optionality (*, °) to all the entities of the Academic Database.
+
+            - school/university
+                    - school_ID             * Required
+                    - school_name           * Required
+                    - school_address        ° Optional
+                    - school_county         ° Optional
+                - departments
+                    - department_ID         * Required
+                    - department_name       * Required
+                - enrollment
+                    - enrollment_ID         * Required
+                    - name                  * Required
+                    - faculty_ID            * Required
+                - courses
+                    - course_ID             * Required
+                    - course_name           * Required
+                - faculty
+                    - faculty_ID            * Required
+                    - name                  * Required
+                    - faculty_email         * Required
+                    - faculty_phone         ° Optional
+                - students
+                    - student_ID            * Required
+                    - student_name          * Required
+                    - student_email         * Required
+                    - student_phone_number  ° Optional
+                - registration details
+                    - registration_ID       * Required
+                    - course_ID             * Required
+                    - semester_ID           * Required
+                    - month                 * Required
+                    - year                  * Required
+                - attendance of students
+                    - attendance_ID         * Required
+                    - student_ID            * Required
+                - exams 
+                    - exam_ID               * Required
+                    - student_ID            * Required
+                    - course_ID             * Required
+                    - exam_score            * Required
+                    - exam_class            * Required
+                - faculty login time
+                    - factulty_ID           * Required
+                    - login_time            * Required
+                - faculty logout time
+                    - faculty_ID            * Required
+                    - logout_time           * Required
