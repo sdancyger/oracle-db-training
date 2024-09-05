@@ -1067,15 +1067,118 @@ Exercise 4: Gather database requirements and Business Rules
 
 ## DFo_3_4_Practice
 
-Identify the table diagram notations listed below.
-a. pk = primary key
-b. fk = foreign key
-c. uk = unique key
-d. * = mandatory (attribute)
-e. o = optional (attribute)
+Exercise 1: Identify entities, attributes, instances and their corresponding tables, rows and columns
 
 
-Create short names for the terms below based on the naming conventions rules.
-a. Authors = Auth
-b. Publishers = Pub
-c. Customers = Cust
+*In this practice you identify entities, attributes, instances and their corresponding tables, rows and columns from the given scenarios.*
+
+1. Match the ERD elements to their corresponding database elements.
+
+- attribute = column
+- entity = table
+- ER model = physical design
+- instance = row
+- primary unique ID = PK
+- relationship = FK
+- secondary unique ID = UK
+
+
+2. Identify the table diagram notations listed below.
+
+    a. pk = primary key
+
+    b. fk = foreign key
+
+    c. uk = unique key
+
+    d. * = mandatory (attribute)
+
+    e. o = optional (attribute)
+
+
+3. Create short names for the terms below based on the naming conventions rules.
+
+    a. Authors = Auth
+
+    b. Publishers = Pub
+
+    c. Customers = Cust
+
+4. The goal of this practice is to recognize attributes for an entity.
+
+These three entities—SONG, EVENT, and CUSTOMER—play a role in a DJ business and are listed as the first three column headings in the table below. The fourth column contains a list of attributes. Use an X or a check mark to indicate that the attribute could belong to one or more of the entities listed. For example, could Title be an attribute for Song, for Event, and/or for Customer?
+
+- Title = song
+- Description = song
+- Venue = event
+- First name = customer
+- Phone number = customer
+- Release date = song
+- Last name = customer
+- Type = song
+- Email address = customer
+
+
+Exercise 2: Mapping the Academic Database
+
+*In this practice you identify entities, attributes and their corresponding tables and columns from the given scenario.*
+
+
+1. With the ERD provided below, map the entities, attributes and UIDs to tables, rows, and keys using a table diagram as shown:
+
+- Entities:
+    - Parent_information
+    - Student
+    - Student_attendance
+    - Academic_session
+    - Course
+    - Student_course_detail
+    - Department
+    - Exam_result
+    - Online
+    - Seated
+    - Exam
+    - Exam_type
+    - Faculty
+    - Faculty_course_detail
+    - Faculty_login_detail
+
+- Attributes:
+    - parent_information_ID
+    - parent_one_first_name
+    - parent_one_last_name
+    - parent_two_first_name
+    - parent_two_last_name
+    - student_ID
+    - student_first_name
+    - student_last_name
+    - registration_year
+    - student_email
+    - number_of_working_days_off
+    - number_of_days_off
+    - exam_eligibility
+    - academic_session_ID
+    - academic_session_name
+    - exam_grade
+    - exam_ID
+    - exam_start_date
+    - seated_exam_building
+    - seated_exam_room
+    - seated_exam_date
+    - seated_exam_time
+    - online_logon_ID
+    - online_password
+    - course_ID
+    - course_name
+    - faculty_contact_hours
+    - faculty_ID
+    - faculty_first_name
+    - faculty_last_name
+    - faculty_email
+    - faculty_full_time_salary
+    - faculty_full_time_insurance_plan
+    - faculty_part_time_hourly_rate
+    - department_ID
+    - department_head
+    - department_name
+    - student_course_grade
