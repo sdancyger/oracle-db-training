@@ -313,11 +313,54 @@ In this practice, you will illustrate the difference between an idea and a physi
         Tasks
         
             1. With the information provided above, identify and create the entities for the School Management System.
-
+                - school/university
+                    - school_ID
+                    - school_address
+                    - school_name
+                - departments
+                    - department_ID
+                    - department_name
+                - enrollment
+                    - enrollment_ID
+                    - name
+                    - faculty_ID
+                - courses
+                    - course_ID
+                    - course_name
+                - faculty
+                    - faculty_ID
+                    - name
+                    - faculty_email
+                    - faculty_phone
+                - students
+                    - student_ID
+                    - student_name
+                    - student_email
+                    - student_phone_number
+                - registration details
+                    - registration_ID
+                    - course_ID
+                    - semester_ID
+                    - month
+                    - year
+                - attendance of students
+                    - attendance_ID
+                    - student_ID
+                - exams
+                    - exam_ID
+                    - student_ID
+                    - course_ID
+                    - exam_score
+                    - exam_class
+                - faculty login time
+                    - factulty_ID
+                    - login_time
+                - faculty logout time
+                    - faculty_ID
+                    - logout_time
     
-    Exercise 2: Identify and add Attributes and corresponding Mandatory and Optional notation to ERD
-
-        
+    Exercise 2: Identify and add Attributes and corresponding Mandatory and Optional notation to ERD.
+    
     In this practice, you identify the attributes and their associated optionality notation in the entities which you have created in Exercise 1.
     
             1. Add the appropriate attributes as well as the optionality (*, °) to all the entities of the Academic Database.
