@@ -534,34 +534,34 @@ Exercise 2: Analyze and Model Relationships
     
     Draw the ERD including the relationships
 
-- Each course has one department.
-    - cardinality- one and only one. 
+- Each course has one department
+    - cardinality- one and only one
     - optionality - mandatory
-- Each course has an academic session.
+- Each course has an academic session
     - cardinality- one and only one
     - optionality - mandatory
 - Each course has students 
     - cardinality- one or more
     - optionality - mandatory
-- Each course has exams.
+- Each course has exams
     - cardinality- one or more
     - optionality - mandatory
-- Each faculty has one academic session.
-    - cardinality - one and only one. 
+- Each faculty has one academic session
+    - cardinality - one and only one
     - optionality - mandatory
-- Each faculty has one or more courses. 
-    - cardinality- one or more. 
-    - optionality - mandatory
-- Each faculty has a department.
+- Each faculty has one or more courses
     - cardinality- one or more
     - optionality - mandatory
-- Each faculty has students.
+- Each faculty has a department
     - cardinality- one or more
     - optionality - mandatory
-- Each faculty creates exams.
+- Each faculty has students
     - cardinality- one or more
     - optionality - mandatory
-- Each department has an academic session.
+- Each faculty creates exams
+    - cardinality- one or more
+    - optionality - mandatory
+- Each department has an academic session
     - cardinality- one or more
     - optionality - mandatory
 - Each department has faculty
@@ -570,7 +570,7 @@ Exercise 2: Analyze and Model Relationships
 - Each department has courses
     - cardinality- one or more
     - optionality - mandatory
-- Each department has parent information.
+- Each department has parent information
     - cardinality- one or more
     - optionality - mandatory
 - Each academic session has faculty
@@ -585,10 +585,10 @@ Exercise 2: Analyze and Model Relationships
 - Each parent information has a student
     - cardinality- one and only one
     - optionality - mandatory
-- Each parent information is stored within the department.
-    - cardinality- one and only one.
+- Each parent information is stored within the department
+    - cardinality- one and only one
     - optionality - mandatory
-- Each student has courses.
+- Each student has courses
     - cardinality- one or more
     - optionality - mandatory
 - Each student has exams.
