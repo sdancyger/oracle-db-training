@@ -265,7 +265,7 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
 
 
-    ## DFo_2_2_Practice
+## DFo_2_2_Practice
 
 *In this practice, you will illustrate the difference between an idea and a physical result.*
 
@@ -290,7 +290,7 @@ Book.com is an online virtual store on the Internet where customers can browse t
         - Design for a house
 
 
-     ## DFo_2_3_Practice
+## DFo_2_3_Practice
 
      Exercise 1: Identify and draw entities as a beginning of an ERD
 
@@ -482,7 +482,7 @@ Exercise 2: Identify the Unique Identifiers and add to the ERD
         - logout_time
 
 
-    ## DFo_2_5_Practice
+## DFo_2_5_Practice
 
 
 Exercise 1: Identify relationships from the ERD
@@ -621,3 +621,105 @@ Exercise 2: Analyze and Model Relationships
 - Each exam is administered by faculty
     - cardinality- one or more
     - optionality - mandatory
+
+
+## DFo_2_6_Practice
+
+Exercise 1: Identify the components in the ERD
+
+In this practice you will identify the components in a given simple ERD.
+
+1. Identify the possible Entities and Attributes from the given scenario.
+
+A company has several departments. Each department has a supervisor and at least one employee. Employees must be assigned to at least one, but possibly more departments. At least one employee is assigned to a project, but an employee may be on vacation and not assigned to any projects. The important data fields are the names of the departments, projects, supervisors and employees, as well as the supervisor and employee number and a unique project number.
+
+- Entities:
+    - departments
+    - supervisor
+    - employees
+    - projects
+- Attributes: 
+    - department_name
+    - department_ID
+    - supervisor_name
+    - supervisor_ID
+    - employee_name
+    - employee_ID
+    - project_name
+    - project_ID
+
+- One company has several departments
+    - cardinality = one or more
+- Each department has one supervisor
+    - cardinality = one and only one
+- Each department has at least one employee
+    - cardinality = one or more
+- At least one employee is assigned to one project.\
+    - cardinality = one or more
+- An employee may not be assigned to a project if on vacation. 
+
+2. Read the given business scenario. Draw the entities HAIRSTYLIST and CLIENT. List the attributes associated with each entity and specify whether they are mandatory or optional. Identify the UIDs. Follow the diagramming conventions discussed. State the ERDish for the relationships.
+
+“In our salon, we have a number of hairstylists. They are all salaried employees, so we keep a record of their first name, last name, address, phone number, social-security number, and salary. During the course of a day, a hairstylist may see several clients. On a slow day, a hairstylist may not work on anyone at all. We have several walk-in clients, and they each get assigned to one hairstylist. We just ask for their first name. We also have customers who call to make an appointment. When they do this, we ask for their first name, last name, and phone number. We also ask if they would like a specific hairstylist. If they have no preference, we assign one for them. Of course, they are allowed to switch to another hairstylist for their next visit to the salon. We are interested in tracking the daily appointments -- which stylist works on which client during a given day.”
+
+- Entities:
+    - Hairstylist
+    - Client
+
+- Attributes:  
+    - Hairstylist
+        - hairstylist_first_name
+        - hairstylist_last_name
+        - hairstylist_address
+        - hairstylist_phone_number
+        - hairstylist_social_security_number
+        - hairstylist_salary
+        - hairstylist_daily_client_quantity
+
+    - Client
+        - client_first_name
+        - client_last_name
+        - client_phone_number
+        - client_specific_hairstylist
+
+- One hairstylist can have multiple clients
+    - cardinality = one or more
+- One hairstylist can have one salary
+    - cardinality = one and only one
+- One client can have one hairstylist per visit
+    - cardinality = one or more
+- One client can have multiple appointments
+    - cardinality = one or more
+
+
+3. Read the given business scenario. Draw the entities  TEACHER and COURSE and CLASS. List the attributes underneath each
+entity. Specify whether they are mandatory or optional. Identify the UIDs. . State the ERDish for the relationships.
+
+“We have several teachers at our school. A teacher can be assigned up to three classes per semester. If a teacher is on sabbatical, he doesn’t teach that semester. We keep a record of the teacher’s first name, last name, address, phone number, and email address. Our school offers many courses -- such as Data Modeling, Introduction to SQL, Trigonometry Physics, and Biology. Each course has a code. For example: Data Modeling would be DM001, Trigonometry would be TR004, etc. During each semester, a course may be taught in several classes -- so there could be two classes of Physics, three classes of Biology, etc. Each class can be taught by only one teacher. We assign a unique ID for each class, and we also keep track of the day it is taught, the time, and the
+classroom.”
+
+- Entities:
+    - Teachers
+    - Course
+    - Class
+
+- Attributes:
+    - teacher_first_name
+    - teacher_last_name
+    - teacher_address
+    - teacher_phone_number
+    - teacher_email
+    - teacher_ID
+    - course_type
+    - course_name
+    - course_code
+    - course_ID
+    - class_quantity
+    - class_ID
+
+- One teacher can be assigned to up to three classes
+    - cardinality = one to many
+- One class can be taught by one teacher
+    - cardinality = one and only one 
+- One course can be taught in several classes
+    - cardinality = one to many
