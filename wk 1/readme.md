@@ -879,3 +879,123 @@ b. Name at least three time-related constraints. For example: End time must be l
 - Exams must start on the date of the exam
 - Exams must start at the start time and end at the end time
 - Exams must be completed within start and end time frame
+
+
+## DFo_3_3_Practice
+
+Exercise 1: Relational Databases
+
+*In this practice you will analyze the given table structure and bring the table to the specified normal form.*
+
+1. Analyze the given table which is not normalized. The table holds information specific to items such as the Item ID, Color of the item, and the Unit price of each of the item. Some of the rows in the table have repeating group of information. 
+
+Evaluate the data in the table and bring the table to first normal form:
+
+- 1NF = A single value ; no mult-valued attributes present.
+- The column for colors should have only one color and not two separated by a comma.
+
+2. Analyze the given table. The table is in the first normal form and has composite primary key made up of the Suppler ID and Store Id. The non-key attribute location is only dependent on the Store ID.
+
+Evaluate the data stored in the table and bring the table to second normal form:
+
+- 2NF = Any non-unique ID attribue is dependent on the entire unique ID. 1NF must be achieved prior. 
+- Store ID and Location
+- Store ID and supplies ID
+
+3. Analyze the given table and the data stored. In the table the Book ID is the primary key and the Category Description is dependent on the Category ID. 
+
+Evaluate the data stored in the table and eliminate the transitive dependency to bring the table to the third normal form:
+
+- 3NF = No non-unique ID attribute can be dependent on another non unique ID attribute. 2NF much be achieved prior. 
+
+
+Exercise 2: Normalize Academic Database ERD
+
+*In this practice, you use un-normalized database models to create normalized database models.*
+
+1. For the Academic Database ERD, evaluate each entity against the rules of normalization, identify the misplaced attributes, and explain which rule of normalization each misplaced attribute violates.
+- Entities:
+    - Parent_information
+    - Student_course_detail
+    - Student
+    - Academic_session
+    - Department
+    - Course
+    - Exam_result
+    - Exam
+    - Online
+    - Seated
+    - Faculty_course_detail
+    - Faculty
+- Attributes:
+    - grade
+    - exam_ID
+    - exam_start_time
+    - exam_name
+    - exam_description
+    - course_ID
+    - course_name
+    - student_first_name
+    - student_last_name
+    - registration_year
+    - email
+    - number_of_working_days
+    - number_of_days_off
+    - exam_eligibility
+    - department_ID
+    - department_name
+    - department_head
+    - faculty_ID
+    - faculty_first_name
+    - faculty_last_name
+    - faculty_email
+    - login_date
+    - login_time
+    - details
+    - logon_ID
+    - logon_password
+    - building
+    - room
+    - date_time
+    - contact_hours
+
+
+Exercise 3: Validate an ERD for Normalization
+
+1. Evaluate the following unnormalized data in the USER entity and develop an entity relationship diagram that is normalized to third normal form.
+- ff
+
+2. A color scheme for a car includes specifications for paint color for the body and the interior colors and materials. For example: The “Desert” color scheme includes silver paint and gray leather interior; the “Sunburst” color scheme includes gold paint and cream leather interior. Does the model below follow the rules of Third Normal Form? If you spot a violation, correct it.
+- dd
+
+
+Exercise 4: Gather database requirements and Business Rules
+
+*In this practice you will analyze the case scenario provided and identify business rules.*
+
+1. Book.com is an online store on the Internet where customers can browse the catalog and select products of interest.
+    
+        a. Every book has a title, isbn, year and price. The store also keeps the author and publisher for any book.
+        
+        b. For authors, the database keeps the name, address and the url of their homepage.
+
+        c. For publishers, the database keeps the name, address, phone number and the url of their website.
+
+        d. The store has several warehouses, each of which has a code, address and phone number.
+        
+        e. The warehouse stocks several books. A book may be stocked at multiple warehouses.
+        
+        f. The database records the number of copies of a book stocked at various warehouses.
+
+        g. The bookstore keeps the name, address, email-id, and phone number of its customers.
+        
+        h. A customer owns several shopping carts. A shopping cart is identified by a Shopping_Cart_ID and contains several books.
+        
+        i. Some shopping carts may contain more than one copy of same book. The database records the number of copies of each book in any shopping cart.
+        
+        j. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to fill or select a billing address, a shipping address, a shipping option, and payment information such as credit card number. An email notification is sent to the customer as soon as the order is placed.
+
+    Your task is to identify the business rules.
+
+2. Identify if the given description can be categorized as a Structural Business rule, Procedural Business rule or Programmatic Business rule.
+- ff
