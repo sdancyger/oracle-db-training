@@ -171,7 +171,7 @@ database.
 
 ## DFo_2_1_Practice
 
-In this practice you analyze the features of multiple table databases from a set of examples.
+*In this practice you analyze the features of multiple table databases from a set of examples.*
 
 
 1. Identify the possible tables and associated fields from the given scenario:
@@ -267,7 +267,7 @@ Book.com is an online virtual store on the Internet where customers can browse t
 
     ## DFo_2_2_Practice
 
-In this practice, you will illustrate the difference between an idea and a physical result.
+*In this practice, you will illustrate the difference between an idea and a physical result.*
 
 
 1. Provide five reasons for creating a conceptual data model.
@@ -361,7 +361,7 @@ In this practice, you will illustrate the difference between an idea and a physi
     
     Exercise 2: Identify and add Attributes and corresponding Mandatory and Optional notation to ERD.
     
-    In this practice, you identify the attributes and their associated optionality notation in the entities which you have created in Exercise 1.
+    *In this practice, you identify the attributes and their associated optionality notation in the entities which you have created in Exercise 1.*
     
             1. Add the appropriate attributes as well as the optionality (*, °) to all the entities of the Academic Database.
 
@@ -420,18 +420,24 @@ In this practice, you will illustrate the difference between an idea and a physi
     Exercise 1: Identify the Unique Identifier and corresponding Primary keys
 
 
-In this practice you identify the unique identifiers and the corresponding primary keys from the given scenarios.
+*In this practice you identify the unique identifiers and the corresponding primary keys from the given scenarios.*
 
             
     1. How do you find a particular song in the whole collection? What would be a unique identifier for SONG?
-
+        - In order to find a particular song in the whole collection, "song_ID" as the unique identifier would have to be used. 
 
     2. Think about all the students in the classroom. Each student is described by several traits or attributes. Which attribute or attributes allow you to pick a single student from the rest of the class?
+        - Attributes that would allow me to pick a single student from the rest of the class would include:
+            - student_ID
+            - student_name
+            - semester
+            - class_section
 
     3. For each entity, select the attribute that could be the unique identifier of each entity.
 
         - Entity: STUDENT
         - Attributes: student ID, first name, last name, address
+                --> student_ID
 
         - Entity: MOVIE
         - Attributes: title, date released, producer, director
@@ -442,7 +448,7 @@ In this practice you identify the unique identifiers and the corresponding prima
 
     Exercise 2: Identify the Unique Identifiers and add to the ERD
 
-In this practice, you will identify unique identifiers and add to an ERD.
+*In this practice, you will identify unique identifiers and add to an ERD.*
 
 1. Use the Academic Database ERD from the previous exercises to identify the following:
 
