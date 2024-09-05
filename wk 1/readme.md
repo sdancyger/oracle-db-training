@@ -408,6 +408,46 @@ In this practice, you will illustrate the difference between an idea and a physi
                 - faculty login time
                     - factulty_ID           * Required
                     - login_time            * Required
+                    - department            ° Optional
                 - faculty logout time
                     - faculty_ID            * Required
                     - logout_time           * Required
+                    - department            ° Optional
+
+
+    ## DFo_2_4_Practice
+
+    Exercise 1: Identify the Unique Identifier and corresponding Primary keys
+
+
+In this practice you identify the unique identifiers and the corresponding primary keys from the given scenarios.
+
+            
+    1. How do you find a particular song in the whole collection? What would be a unique identifier for SONG?
+
+
+    2. Think about all the students in the classroom. Each student is described by several traits or attributes. Which attribute or attributes allow you to pick a single student from the rest of the class?
+
+    3. For each entity, select the attribute that could be the unique identifier of each entity.
+
+        - Entity: STUDENT
+        - Attributes: student ID, first name, last name, address
+
+        - Entity: MOVIE
+        - Attributes: title, date released, producer, director
+
+        - Entity: LOCKER
+        - Attributes: size, location, number
+
+
+    Exercise 2: Identify the Unique Identifiers and add to the ERD
+
+In this practice, you will identify unique identifiers and add to an ERD.
+
+1. Use the Academic Database ERD from the previous exercises to identify the following:
+
+    a. Unique Identifiers
+        - 
+
+    b. Candidate Unique Identifiers
+        - 
