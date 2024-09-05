@@ -963,11 +963,37 @@ Exercise 2: Normalize Academic Database ERD
 Exercise 3: Validate an ERD for Normalization
 
 1. Evaluate the following unnormalized data in the USER entity and develop an entity relationship diagram that is normalized to third normal form.
-- ff
+- Adjust to 1NF, 2NF, 3NF
+- Entites:
+    - User
+    - Message
+    - Record
+    - Subject
+    - Text
+    - Server
+
+- Attributes:
+    - User_ID
+    - User_name
+    - Message_ID
+    - Recorded_date
+    - Subject
+    - Text
+    - Server_ID
+    - Server_name
 
 2. A color scheme for a car includes specifications for paint color for the body and the interior colors and materials. For example: The “Desert” color scheme includes silver paint and gray leather interior; the “Sunburst” color scheme includes gold paint and cream leather interior. Does the model below follow the rules of Third Normal Form? If you spot a violation, correct it.
-- dd
+- Entities:
+    - Car
+- Attributes: 
+    - car_number
+    - car_make
+    - car_model
+    - car_color_scheme
+    - car_paint_color
+    - car_interior_color
 
+-Curently in 2NF
 
 Exercise 4: Gather database requirements and Business Rules
 
@@ -997,5 +1023,41 @@ Exercise 4: Gather database requirements and Business Rules
 
     Your task is to identify the business rules.
 
+- Entities:
+    - Book
+    - Author
+    - Publisher
+    - Warehouse
+    - Database
+    - Bookstore
+    - Customer
+    - Shopping_cart
+    - Transaction
+
+- Attributes:
+    - ISBN
+    - title
+    - year
+    - price
+    - address
+    - phone_number
+    - URL_of_site
+    - warehouse_code
+    - customer_name
+    - customer_email
+    - customer_address
+    - customer_phone_number
+    - shopping_cart_ID 
+    - duplicates
+    - payment_type
+    - payment_amount
+    - shipping_address
+    - shipping_zip_code
+    - shipping_county
+    - order_date
+    - expected_delivery
+    - order_tracking_ID
+
+
 2. Identify if the given description can be categorized as a Structural Business rule, Procedural Business rule or Programmatic Business rule.
-- ff
+-
