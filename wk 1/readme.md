@@ -1063,3 +1063,13 @@ Exercise 4: Gather database requirements and Business Rules
 - Structural
 - Procedural
 - Programmatic
+
+
+## DFo_3_4_Practice
+
+Identify the table diagram notations listed below.
+a. pk = primary key
+b. fk = foreign key
+c. uk = unique key
+d. * = mandatory (attribute)
+e. o = optional (attribute)
