@@ -836,3 +836,46 @@ Exercise 2: Adding nontransferability option to an ERD
 -One student can receive only one exam result. 
 
 -One exam result can be provided to only one student, and cannot be transferred to another student.
+
+
+## DFo_3_2_Practice
+
+Exercise 1: Track Data Change over Time
+
+*In this practice you use scenarios to identify data that changes over time and construct ERD models that incorporate the element of data over time.*
+
+
+1. Construct the ERD for the given scenario.
+
+In the Academic Database a Grade is issued to each STUDENT for each COURSE taken and stored in the STUDENT COURSE
+DETAIL entity. A STUDENT may decide to re-take a COURSE to better their Grade. The administration would like to keep a record of the old/previous Grade as well as the new Grade. Show how the ERD would be modified to include historical Grades if the STUDENT should have them. ** We will not make this actual change to the ERD.
+- Entities:
+    - Student
+    - Course
+    - Student_course_detail
+- Attributes:
+    - student_ID
+    - course_ID
+    - course_detail_result
+    - grade_result
+
+-A student receives a grade for each course.
+
+-A student's grade is stored in the student_course_detail.
+
+-A course can be re-taken if a student decides to improve a grade.
+
+
+
+2. Examine the ERD that represents classroom assignments for different exams.
+
+
+
+a. Why is start time part of the UID of ASSIGNMENT?
+- "Start time" is part of the unique ID of the ASSIGNMENT entity due to it's specificity when relating to a student. All students begin exams at different start times, which is a unique distinction between different students. 
+
+b. Name at least three time-related constraints. For example: End time must be later than start time. Indicate if the constraint represents conditional non-transferability
+- Exams must begin at designated start time
+- Exams must start on the date of the exam
+- Exams must start at the start time and end at the end time
+- Exams must be completed within start and end time frame
