@@ -1060,4 +1060,6 @@ Exercise 4: Gather database requirements and Business Rules
 
 
 2. Identify if the given description can be categorized as a Structural Business rule, Procedural Business rule or Programmatic Business rule.
--
+- Structural
+- Procedural
+- Programmatic
