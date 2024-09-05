@@ -1073,3 +1073,9 @@ b. fk = foreign key
 c. uk = unique key
 d. * = mandatory (attribute)
 e. o = optional (attribute)
+
+
+Create short names for the terms below based on the naming conventions rules.
+a. Authors = Auth
+b. Publishers = Pub
+c. Customers = Cust
