@@ -294,6 +294,7 @@ In this practice, you will illustrate the difference between an idea and a physi
 
      Exercise 1: Identify and draw entities as a beginning of an ERD
 
+
         In this practice, you identify and add the entities for an Academic Database, or in other words a School Management System. For your convenience, here is a summary of how the Academic Database (School Management System) works:
 
         a. A School/University has many Departments which offer courses to students in a given academic session.
