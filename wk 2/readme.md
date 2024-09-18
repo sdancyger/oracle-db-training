@@ -104,11 +104,38 @@ Exercise 5: Select how subtypes are generated in the Relational Model
 - To select how the subtypes are generated in the Relational Model, the "Logical" tab has to be accessed. Access the "Faculty Super" in order to make edits. Choose "Subtypes" after clicking on "Options". Click on single-table from the Subtree Generation drop down menu, then re-engineer to the Relational Model. 
 
 ## DFo_6_1_sg
+
+Exercise 1: Introduction to Oracle Application Express
+
+-	The guide to learn about the features within Oracle Application Express was reviewed. Oracle APEX allows for the creation of applications on databases. Also, it has features inclusive of interface themes, navigational controls, form handler, and flexible reports. 
+
 ## DFo_6_2_sg
+Exercise 1: Using Help in Oracle Application Express
+
+-	To use Oracle Application Express effectively, practice is needed. Access the “help” icon which explores different facets such as Application Express SQL Workshop, Managing Database Objections with Object Browser, Using SQL Commands, and Using SQL Scripts. For example, within the “Object Browser,” it is possible to create various objects like tables and views. 
+
 ## DFo_6_3_sg
-## DFo_6_4_sg
-## DFo_6_5_sg
-## DFo_6_6_sg
-## DFo_6_7_sg
-## DFo_6_8_sg
-## DFo_6_9_sg
+Exercise 1: Creating Tables Using Oracle Application Express
+
+CREATE TABLE parent_info (
+id VARCHAR2(10) NOT NULL,
+first_name _parent1 CHAR(50) NOT NULL,
+last_name _parent1 CHAR(50) NOT NULL,
+first_name _parent2 CHAR(50) NOT NULL,
+last_name _parent2 CHAR(50) NOT NULL
+);
+
+CREATE TABLE student (
+id VARCHAR2(10) NOT NULL,
+first_name CHAR(50) NOT NULL,
+last_name CHAR(50) NOT NULL,
+registration_yr NUMBER(4) NOT NULL,
+email VARCHAR2(100) NOT NULL
+);
+
+CREATE TABLE student_attendance (
+nmbr_working_days INT NOT NULL,
+nmbr_days_off INT NOT NULL,
+exam_elgibility VARCHAR2(50)
+);
+
