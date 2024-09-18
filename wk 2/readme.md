@@ -74,8 +74,12 @@ Exercise 1: Identify and Create Entities, Attributes and Relationships
 Exercise 1: Forward Engineer a Logical Model to a Relational Model
 
 ## DFo_5_1_sg
+![picture1](pic1.png)
+
+![picture2](pic2.png)
 
 ## DFo_5_2_sg
+
 ## DFo_6_1_sg
 ## DFo_6_2_sg
 ## DFo_6_3_sg
