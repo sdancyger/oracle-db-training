@@ -197,3 +197,170 @@ Pads the right-hand side of a character, resulting in a left- justified value.
  FROM employees
  WHERE TO_CHAR(hire_date, 'MONTH') = UPPER(&month_name);
  
+ ## Database Programming with SQL
+ ## 4-2: Number Functions
+ ## Practice Activities
+ 
+ ### Objectives
+ • Select and apply the single-row number functions ROUND, TRUNC, and MOD in a SQL query
+ 
+ • Distinguish between the results obtained when TRUNC is applied to a numeric value and
+ ROUND is applied to a numeric value
+ 
+ • State the implications for business when applying TRUNC and ROUND to numeric values
+ 
+ ## Vocabulary
+ ## *Identify the vocabulary word for each definition below:*
+ 
+ Used to terminate the column, expression, or value to a specified number of decimal places
+    
+    -trunc
+ 
+ These functions accept numeric input and return numeric values.
+    
+    -number functions
+ 
+ Returns the remainder of a division.
+ 
+    -mod
+ 
+ Rounds the column, expression, or value to a set number of decimal places.
+ 
+    -round
+ 
+ ## Try It / Solve It
+
+ 1. 
+ 
+ Display Oracle database employee last_name and salary for employee_ids between 100 and 102. Include a third column that divides each salary by 1.55 and rounds the result to two decimal places.
+ 
+ SELECT last_name, salary, 
+ ROUND(salary / 1.55, 2) AS new_salary
+ FROM employees
+ WHERE employee_id BETWEEN 100 AND 102;
+ 
+ 2. 
+ 
+ Display employee last_name and salary for those employees who work in department 80. Give each of them a raise of 5.333% and truncate the result to two decimal places.
+ 
+ SELECT last_name, salary, TRUNC(salary * 1.05333, 2) AS new_salary
+ FROM employees
+ WHERE department_id = 80;
+ 
+ 3. 
+ 
+ Use a MOD number function to determine whether 38873 is an even number or an odd number.
+ 
+ SELECT 
+ CASE 
+ WHEN MOD(38873, 2) = 0 THEN 'Even'
+ ELSE 'Odd'
+ END AS number_type;
+ 
+ Odd.
+ 
+ 
+ ## Database Programming with SQL
+ ## 4-3: Date Functions
+ ## Practice Activities
+ 
+ ## Objectives
+ • Select and apply the single-row functions MONTHS_BETWEEN, ADD_MONTHS, NEXT_DAY,
+ LAST_DAY, ROUND, and TRUNC that operate on date data
+
+ • Explain how date functions transform Oracle dates into date data or numeric values
+
+ • Demonstrate proper use of the arithmetic operators with dates
+
+ • Demonstrate the use of SYSDATE and date functions
+
+ • State the implications for world businesses to be able to easily manipulate data stored in date format
+ 
+ ## Vocabulary
+ ## *Identify the vocabulary word for each definition below:*
+ 
+ A function that returns the current date and time of the database
+ server.
+ sysdate
+ 
+ Add calendar months to date
+    
+    add_months
+ 
+ Last day of the month
+    
+    last_day
+ 
+ Next day of the date specified
+    
+    next_day
+ 
+ Number of months between due dates
+
+    months_between
+ 
+ ## Try It / Solve It
+
+ 1. 
+ For DJs on Demand, display the number of months between the event_date of the Vigil wedding and today’s date. Round to the nearest month.
+ 
+ SELECT ROUND(MONTHS_BETWEEN(SYSDATE, event_date)) AS Months_Between
+ FROM dj_list
+ WHERE event_name = 'Vigil wedding';
+ 
+
+ 2. Display the days between the start of last summer’s school vacation break and the day school started this year. Assume 30.5 days per month. Name the output “Days.”
+ 
+ SELECT (TO_DATE('2024-09-01', 'YYYY-MM-DD') - TO_DATE('2024-06-15', 'YYYY-MM-DD')) AS Days FROM dual;
+
+ 3. Display the days between January 1 and December 31.
+ 
+ SELECT (TO_DATE('2024-12-31', 'YYYY-MM-DD') - TO_DATE('2024-01-01', 'YYYY-MM-DD')) AS Days
+ 
+ 4. Using one statement, round today's date to the nearest month and nearest year, and truncate it to the nearest month and nearest year. Use an alias for each column.
+ 
+ SELECT ROUND(SYSDATE, 'MM') AS Rounded_Month, ROUND(SYSDATE, 'YYYY') AS Rounded _Year, TRUNC(SYSDATE, 'MM') AS Truncated_Month, TRUNC(SYSDATE, 'YYYY') AS Truncated _Year
+ FROM dual;
+ 
+ 5. What is the last day of the month for June 2005? Use an alias for the output.
+ 
+ SELECT  LAST_DAY(TO_DATE('2005-06-01', 'YYYY-MM-DD')) AS Last_Day_of_June_2005
+ FROM dual;  
+ 
+ 6. Display the number of years between the Global Fast Foods employee Bob Miller’s birthday and today. Round to the nearest year.
+ 
+ SELECT ROUND(MONTHS_BETWEEN(SYSDATE, birthday) / 12) AS Years_Between
+ FROM F_EMPLOYEES
+ WHERE first_name = 'Bob' AND last_name = 'Miller';
+ 
+ 7. Your next appointment with the dentist is six months from today. On what day will you go to the dentist? Name the output, “Appointment.”
+ 
+ SELECT ADD_MONTHS(SYSDATE, 6) AS "Appointment"
+ FROM DUAL;
+ 
+ 8. The teacher said you have until the last day of this month to turn in your research paper. What day will this be? Name the output, “Deadline.”
+ 
+ SELECT LAST_DAY(SYSDATE) AS "Deadline"
+ FROM DUAL;
+ 
+ 9. How many months between your birthday this year and January 1 next year?
+ 
+ SELECT MONTHS_BETWEEN('2025-01-01', '2024-07-13') AS Months_Between
+ FROM DUAL;
+ 
+ SELECT NEXT_DAY('2024-07-13', 'FRIDAY') AS "First Friday"
+ FROM DUAL;
+ 
+ 10. What’s the date of the next Friday after your birthday this year? Name the output, “First Friday.”
+ 
+ SELECT NEXT_DAY(TO_DATE('2024-07-13', 'YYYY-MM-DD'), 'FRIDAY') AS "First Friday"
+ FROM DUAL;
+ 
+ 11. Name a date function that will return a number.
+ 
+Months_Between
+ 
+ 12. Name a date function that will return a date.
+ 
+Next_Day
+ 
