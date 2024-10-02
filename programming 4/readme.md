@@ -13,69 +13,89 @@ Database Programming: Section 4
 ### Practice Activities
 
 ### Objectives
-• Select and apply single-row functions that perform case conversion and/or character
-manipulation.
-• Select and apply character case-manipulation functions LOWER, UPPER, and INITCAP in a SQL query.
-• Select and apply character-manipulation functions CONCAT, SUBSTR, LENGTH, INSTR,
-LPAD, RPAD, TRIM, and REPLACE in a SQL query.
-• Write flexible queries using substitution variables.
+    • Select and apply single-row functions that perform case conversion and/or character
+    manipulation.
+
+    • Select and apply character case-manipulation functions LOWER, UPPER, and INITCAP in a SQL query.
+    
+    • Select and apply character-manipulation functions CONCAT, SUBSTR, LENGTH, INSTR, LPAD, RPAD, TRIM, and REPLACE in a SQL query.
+
+    • Write flexible queries using substitution variables.
 
 ## Vocabulary
 ### *Identify the vocabulary word for each definition below:*
 
 Dummy table used to view results from functions and calculations
--dual
+    
+    -dual
 
 The arrangement of data for storage or display.
--format
+    
+    -format
 
 Converts alpha character values to uppercase for the first letter of each word, all other letters in lowercase.
--inticap
+    
+    -inticap
 
 Functions that accept character data as input and can return both character and numeric values.
--character manipulation
+    
+    -character manipulation
 
 Removes all specified characters from either the beginning or the ending of a string.
--trim
+    
+    -trim
 
 A symbol that represents a quantity or a relationship between quantities
--operator
+    
+    -operator
 
 Functions that operate on single rows only and return one result per row
--single row
+    
+    -single row
 
 Converts alpha characters to upper case
--upper
+    
+    -upper
 
 Raw data entered into the computer
--input
+    
+    -input
 
 Concatenates the first character value to the second character value; equivalent to concatenation operator (||).
--concat
+    
+    -concat
 
 Data that is processed into information
--output
+    
+    -output
 
 Converts alpha character values to lowercase.
--lower
+    
+    -lower
 
 Pads the left side of a character, resulting in a right-justified value
--lpad
+    
+    -lpad
 
 Returns specific characters from character value starting at a specific character position and going specified character positions long
--substr
+    
+    -substr
 
 Replaces a sequence of characters in a string with another set of characters.
--replace
+    
+    -replace
 
 Returns the numeric position of a named string.
--instr
+    
+    -instr
 
 Returns the number of characters in the expression
--length
+    
+    -length
 
 Pads the right-hand side of a character, resulting in a left- justified value.
--rpad
+    
+    -rpad
 
  
  ## Try It / Solve It
