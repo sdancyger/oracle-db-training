@@ -33,7 +33,7 @@ Identify the vocabulary word for each definition below:
     - Part of a SQL statement
         -clause
     - A combination of the two clauses
-        -query
+        -select from
 
 ### Try It / Solve It
 Now you know the basics of a SELECT statement, It's time to practice what you've learned:* 
