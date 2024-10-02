@@ -447,16 +447,3 @@ FROM employees;
     d. SelecT* FROM employees;
 
         a. SELCT * FROM employees;
-
-
-
-
-## DP_2_2_Practice
-
-## DP_2_3_Practice
-
-## DP_3_1_Practice
-
-## DP_3_2_Practice
-
-## DP_3_3_Practice
